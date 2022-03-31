@@ -45,25 +45,26 @@ public class ConsultarAlumnos extends HttpServlet {
     
     
     public void init(ServletConfig scg) throws ServletException{
-        //se debe de establecer los elementos para la conexion con db
-        String url = "jdbc:mysql://localhost/alumnos";
-        //controlador:motorBD:puerto//IP/nombreBD
+        //se dene de establecer los elementos para la conexion con bd
+        String url = "jdbc:mysql:3306//localhost/alumnos";
+                   //controlador:motorBD:puerto//IP/nombreBD
         String username = "root";
-        String password = "Roja161203.";
+        String password = "n0m3l0";
         
         try{
-           //intentar conectar a la bd
-           Class.forName("com.mysql.jdbc.Driver");
-           url = "jdbc:mysql://localhost/alumnos";
-           con = DriverManager.getConnection(url, username, password);
-           set = con.createStatement();
-           
-           System.out.print("Si conecto a la BD w ");
-           
+            //internat conectar a la bd
+            Class.forName("com.mysql.jdbc.Driver");
+            url = "jdbc:mysql://localhost/alumnos";
+            con = DriverManager.getConnection(url, username, password);
+            set = con.createStatement();
+            
+            System.out.println("Si conecto a la BD :3 *w* ");
+            
         }catch(Exception e){
-           System.out.println("No conecto, solo juguito contigo uwu");
-           System.out.println(e.getMessage());
-           System.out.println(e.getStackTrace());
+            System.out.println("No conecto, solo juguito contigo uwu");
+            System.out.println(e.getMessage());
+            System.out.println(e.getStackTrace());
+        
         }
     }
     
