@@ -1,0 +1,113 @@
+:root{
+
+    --color-primario: #333;
+    --color-secundario: lime;
+
+}
+
+body{
+
+    /* Posicionamiento */
+
+    /* Box model */
+    display: flex;
+    height: 100vh;
+
+    /* Texto */
+    align-items: center;
+    justify-content: center;
+
+    /* Visuales */
+    background-color: var(--color-primario);
+
+    /* Varias */
+
+}
+
+.btn{
+
+    /* Posicionamiento */
+    position: relative;
+    display: inline-block;
+
+    /* Box model */
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+
+    /* Texto */
+    font-size: 1.5rem;
+    font-family: consolas;
+    text-transform: uppercase;
+    overflow: hidden;
+
+    /* Visuales */
+    border: 3px var(--color-secundario) solid;
+    background-color: transparent;
+    color: #fff;
+
+    /* Varias */
+
+
+}
+
+.span-1{
+
+    /* Posicionamiento */
+    position: absolute;
+    left: 50%;
+    top: 0;
+
+    /* Box model */
+    width: 0;
+    height: 100%;
+
+    /* Texto */
+
+    /* Visuales */
+    background-color: var(--color-secundario);
+    transition: 0.2s;
+
+    /* Varias */
+
+}
+
+.btn:hover .span-1, .texto{
+
+    /* Posicionamiento */
+    left: 0;
+    top: 0;
+
+    /* Box model */
+    width: 100%;
+    height: 100%;
+
+    /* Texto */
+
+    /* Visuales */
+
+    /* Varias */
+    cursor: pointer;
+
+}
+
+.btn:hover{
+
+    /* Posicionamiento */
+
+    /* Box model */
+
+    /* Texto */
+    color: var(--color-primario);
+
+    /* Visuales */
+    box-shadow: 0 0 10px lime, 0 0 40px lime;
+
+    /* Varias */
+    
+}
+
+.texto{
+
+    position: relative;
+
+}
